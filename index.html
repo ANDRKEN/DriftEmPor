@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Porsche Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.xtrafondos.com/wallpapers/porsche-911-gt3-rs-blanco-13079.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: auto;
+        }
+
+        .brand-box {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .brand-box:hover {
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2); 
+        }
+
+        .brand-box h1 {
+            margin-top: 0;
+            color: #c40000;
+        }
+
+        /* Nav styling for the model grid */
+        .models-nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .model-card {
+            background: white;
+            width: 250px;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 5px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: box-shadow 0.3s ease, background-color 0.4s ease; 
+            text-decoration: none; /* Removes underline from links */
+            display: block;
+        }
+
+        .model-card:hover {
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2); 
+            background-color: #FA5252;
+        }
+
+        .model-card img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.5s ease-out; 
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            30% { transform: scale(1.5); }
+            40% { transform: translateX(-35px); }
+            70% { transform: translateX(35px); }
+            75% { transform: rotate(0); }
+            80% { transform: rotate(360deg); }
+            95%  { transform: rotate(0); }
+            100% { transform: scale(1); }
+        }
+
+        .model-card h3 {
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .model-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .model-card:hover img {
+            animation: pulse 2.3s infinite;
+        }
+
+        .model-card:hover h3, .model-card:hover p {
+            color: white;
+        }
+      
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header class="brand-box">
+        <h1>Porsche</h1>
+        <p>
+            Porsche is a legendary German sports car manufacturer known for its iconic design, engineering precision, 
+            and performance-driven vehicles. From timeless classics to cutting-edge modern supercars, Porsche continues 
+            to define automotive excellence.
+        </p>
+    </header>
+
+    <!-- Added nav tag here to wrap the model links -->
+    <nav class="models-nav">
+        
+        <a href="pt 14 follow up.html" class="model-card">
+            <img src="https://images-porsche.imgix.net/-/media/1DBDC37E82084CF496EE48FCCE48BE0A_B3C2A87AF66E4046A12F32259A2BA221_911-gt3-side?w=2560&h=697&q=45&crop=faces%2Centropy%2Cedges&auto=format" alt="Porsche 911">
+            <h3>Porsche 911</h3>
+            <p>A timeless sports car combining heritage, design, and exhilarating performance.</p>
+        </a>
+
+        <a href="pt 14 follow up.html" class="model-card">
+            <img src="https://a.storyblok.com/f/285489813253582/5000x1390/cf22a85fcc/model-y1afl1-2026-side-shot_421849e468334d08added678b39d1b8f.png" alt="Porsche Taycan">
+            <h3>Porsche Taycan</h3>
+            <p>Porsche’s first all-electric sports car, delivering instant torque and cutting-edge tech.</p>
+        </a>
+
+        <a href="pt 14 follow up.html" class="model-card">
+            <img src="https://images-porsche.imgix.net/-/media/4D76222C0FFD456B9F8F93CC638725CD_269E9C4B98FF4C54B6DE2F8741B844F0_CM24N3CIX0006-01-718-cayman-s-side?w=2560&h=697&q=45&crop=faces%2Centropy%2Cedges&auto=format" alt="Porsche Cayman">
+            <h3>Porsche Cayman</h3>
+            <p>A mid-engine masterpiece offering balanced handling and sharp driving dynamics.</p>
+        </a>
+
+    </nav>
+
+</div>
+
+</body>
+</html>
